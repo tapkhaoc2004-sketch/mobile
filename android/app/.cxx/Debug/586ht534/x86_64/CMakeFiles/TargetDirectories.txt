@@ -1,0 +1,2 @@
+D:/jectjob-dev/android/app/.cxx/Debug/586ht534/x86_64/CMakeFiles/edit_cache.dir
+D:/jectjob-dev/android/app/.cxx/Debug/586ht534/x86_64/CMakeFiles/rebuild_cache.dir
