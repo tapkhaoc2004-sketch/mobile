@@ -1,16 +1,32 @@
-# planner
+# study-mobile-app
+Study and practice learning Flutter, Firebase, and FastAPI.
 
-A new Flutter project.
+## Features
+- Timetable builder (subjects by day/time)
+- Event scheduling & reminders
+- Focus mode / study timer
+- AI Planner: predicts recommended study hours based on user inputs
 
-## Getting Started
+## Tech Stack
+- Frontend: Flutter (Dart)
+- Backend: Firebase (Auth, Firestore)
+- AI Service: FastAPI (Python) + ML model (e.g., Linear Regression/MLR)
 
-This project is a starting point for a Flutter application.
+## System Overview
+Flutter app sends user inputs as JSON to FastAPI → model predicts study plan → results returned to the app and displayed.
+Firebase stores user data (events, timetable, todos).
 
-A few resources to get you started if this is your first Flutter project:
+## Screenshots / Demo
+- (Add screenshots here)
+- Demo video: (link)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## How to Run
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Mobile (Flutter)
+1. `flutter pub get`
+2. Create Firebase project + add `google-services.json` / `GoogleService-Info.plist`
+3. `flutter run`
+
+### AI Service (FastAPI)
+1. `pip install -r requirements.txt`
+2. `uvicorn main:app --reload --host 0.0.0.0 --port 8000`
